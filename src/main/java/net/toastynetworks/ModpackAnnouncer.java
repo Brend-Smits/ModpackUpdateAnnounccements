@@ -14,12 +14,11 @@ import java.util.concurrent.TimeUnit;
 public class ModpackAnnouncer {
 
     private static JDA jda;
-    private static ScheduledExecutorService scheduler;
+    private static ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
 
 
     public static void main(String[] arguments) throws Exception
     {
-        Executors.newSingleThreadScheduledExecutor();
         jda = new JDABuilder(AccountType.BOT).setToken("NDM4Nzc0Mjc2NDYwNjQyMzA0.DcJf-Q.qVc_ND5Hbr9GIAStjF6Lsu-GBac").buildAsync();
         jda.addEventListener(new EventListener());
         scheduler.scheduleWithFixedDelay(() -> {
