@@ -53,7 +53,7 @@ public class ModpackAnnouncer {
             System.out.println(channel.canTalk());
             System.out.println(channel.getIdLong());
             System.out.println(channel.toString());
-            channel.sendMessage(msg);
+            channel.sendMessage(msg).submit();
         } else {
             System.out.println("No channels found");
         }
