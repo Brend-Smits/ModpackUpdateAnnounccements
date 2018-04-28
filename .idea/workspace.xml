@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ade9cbf-6eca-4d3d-abd8-dc2cb0879e7c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/toastynetworks/CheckUpdates.class" afterPath="$PROJECT_DIR$/build/classes/java/main/net/toastynetworks/CheckUpdates.class" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/toastynetworks/ModpackAnnouncer.class" afterPath="$PROJECT_DIR$/build/classes/java/main/net/toastynetworks/ModpackAnnouncer.class" />
-      <change beforePath="$PROJECT_DIR$/build/libs/ModpackAnnouncerBot-1.0-all.jar" afterPath="$PROJECT_DIR$/build/libs/ModpackAnnouncerBot-1.0-all.jar" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/toastynetworks/CheckUpdates.java" afterPath="$PROJECT_DIR$/src/main/java/net/toastynetworks/CheckUpdates.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/toastynetworks/ModpackAnnouncer.java" afterPath="$PROJECT_DIR$/src/main/java/net/toastynetworks/ModpackAnnouncer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -99,8 +89,8 @@
       <file leaf-file-name="ModpackAnnouncer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/toastynetworks/ModpackAnnouncer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="932">
-              <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+            <state relative-caret-position="899">
+              <caret line="54" column="49" lean-forward="false" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,7 +101,7 @@
       <file leaf-file-name="CheckUpdates.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/toastynetworks/CheckUpdates.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
+            <state relative-caret-position="-25">
               <caret line="49" column="62" lean-forward="false" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -558,10 +548,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="837" />
-    <option name="y" value="-13" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1238" />
+    <option name="y" value="170" />
+    <option name="width" value="2621" />
+    <option name="height" value="1931" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -784,12 +774,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524681684414</updated>
       <workItem from="1524681686210" duration="6599000" />
-      <workItem from="1524913513559" duration="24625000" />
+      <workItem from="1524913513559" duration="25465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31224000" />
+    <option name="totallyTimeSpent" value="32064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3866" height="2126" extended-state="6" />
@@ -919,7 +909,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/toastynetworks/CheckUpdates.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
+        <state relative-caret-position="-25">
           <caret line="49" column="62" lean-forward="false" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -932,8 +922,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/toastynetworks/ModpackAnnouncer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+        <state relative-caret-position="899">
+          <caret line="54" column="49" lean-forward="false" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

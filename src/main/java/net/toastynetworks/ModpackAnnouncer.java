@@ -44,9 +44,18 @@ public class ModpackAnnouncer {
     public void sendAnnouncement() {
         Message msg = new MessageBuilder().append("Announcement announcement announcement!").build();
         List<TextChannel> channelList = jda.getTextChannelsByName("html", true);
+        for (TextChannel channel: channelList) {
+            System.out.println(channel.getIdLong());
+            System.out.println(channel.toString());
+        }
         if (!channelList.isEmpty()) {
             TextChannel channel = channelList.get(0);
+            System.out.println(channel.canTalk());
+            System.out.println(channel.getIdLong());
+            System.out.println(channel.toString());
             channel.sendMessage(msg);
+        } else {
+            System.out.println("No channels found");
         }
     }
     }
