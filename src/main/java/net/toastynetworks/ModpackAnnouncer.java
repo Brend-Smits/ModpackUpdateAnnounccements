@@ -7,6 +7,7 @@ import net.dv8tion.jda.core.MessageBuilder;
 import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.TextChannel;
 
+import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -42,7 +43,10 @@ public class ModpackAnnouncer {
 
     public void sendAnnouncement() {
         Message msg = new MessageBuilder().append("Announcement announcement announcement!").build();
-        TextChannel channel = jda.getTextChannelById(366923238283935755L);
-        channel.sendMessage(msg);
+        List<TextChannel> channelList = jda.getTextChannelsByName("html", true);
+        if (!channelList.isEmpty()) {
+            TextChannel channel = channelList.get(0);
+            channel.sendMessage(msg);
+        }
     }
     }

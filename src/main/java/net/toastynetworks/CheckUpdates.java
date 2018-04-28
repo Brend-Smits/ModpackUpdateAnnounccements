@@ -18,6 +18,7 @@ public class CheckUpdates {
 
     HashMap<Integer, Integer> newestUpdates = new HashMap<Integer, Integer>();
     List<Integer> modpackList = asList(227724, 256183);
+    ModpackAnnouncer modpackAnnouncer = new ModpackAnnouncer();
 
 
     public void getModpackFileData(int modpackId) throws Exception {
@@ -49,8 +50,7 @@ public class CheckUpdates {
     private void IsModpackUpdated(String releaseType, int fileId, int modpackId) {
         if (IsReleaseTypeReleased(releaseType)) {
             if (newestUpdates.get(modpackId) == null) {
-                newestUpdates.replace(modpackId, fileId);
-                ModpackAnnouncer modpackAnnouncer = new ModpackAnnouncer();
+                newestUpdates.put(modpackId, fileId);
                 modpackAnnouncer.sendAnnouncement();
                 System.out.println("Map was null, so I added the correct fileId");
             } else if (newestUpdates.get(modpackId) != fileId) {
