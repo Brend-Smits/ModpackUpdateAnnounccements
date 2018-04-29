@@ -1,6 +1,5 @@
 package net.toastynetworks;
 
-import net.dv8tion.jda.core.JDA;
 import org.json.JSONArray;
 
 import java.io.BufferedReader;
@@ -22,7 +21,6 @@ public class CheckUpdates {
 
 
     public void getModpackFileData(int modpackId) throws Exception {
-        AddDefaultValueInMapIfNonExists(modpackId);
         URL modpackURL = new URL("https://cursemeta.dries007.net/api/v2/direct/GetAllFilesForAddOn/" + modpackId);
         HttpURLConnection httpRequest = (HttpURLConnection) modpackURL.openConnection();
         httpRequest.setRequestMethod("GET");
@@ -36,28 +34,20 @@ public class CheckUpdates {
         }
     }
 
-
-    public void AddDefaultValueInMapIfNonExists(int modpackId) {
-        if (!newestUpdates.containsKey(modpackId)) {
-            newestUpdates.put(modpackId, null);
-        }
-    }
-
     public boolean IsReleaseTypeReleased(String release) {
         return release.equals("Release");
     }
 
     private void IsModpackUpdated(String releaseType, int fileId, int modpackId) {
-        if (IsReleaseTypeReleased(releaseType)) {
-            if (newestUpdates.get(modpackId) == null) {
-                newestUpdates.put(modpackId, fileId);
-                modpackAnnouncer.sendAnnouncement();
-                System.out.println("Map was null, so I added the correct fileId");
-            } else if (newestUpdates.get(modpackId) != fileId) {
+        if (!newestUpdates.containsKey(modpackId)) {
+            newestUpdates.put(modpackId, fileId);
+            System.out.println("Added default value of " + modpackId +  " because map was empty");
+        } else if (IsReleaseTypeReleased(releaseType)){
+            if(newestUpdates.get(modpackId) != fileId) {
                 newestUpdates.replace(modpackId, fileId);
+                modpackAnnouncer.sendAnnouncement();
 
                 System.out.println("Map was not null, new fileId was different than old one so I replaced the value in the hashmap");
-
             }
         }
     }
