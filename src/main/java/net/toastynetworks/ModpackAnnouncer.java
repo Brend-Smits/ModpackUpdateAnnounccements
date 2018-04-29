@@ -16,6 +16,8 @@ public class ModpackAnnouncer {
 
     private static JDA jda;
     private static ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
+    private static CheckUpdates checkUpdates = new CheckUpdates();
+
 
 
     public static void main(String[] arguments) throws Exception
@@ -29,7 +31,6 @@ public class ModpackAnnouncer {
 
 
     public static void callForUpdates() {
-        CheckUpdates checkUpdates = new CheckUpdates();
         try {
             for (int modpackId:checkUpdates.modpackList) {
                 checkUpdates.getModpackFileData(modpackId);
