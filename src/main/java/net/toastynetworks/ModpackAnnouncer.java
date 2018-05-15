@@ -34,7 +34,7 @@ public class ModpackAnnouncer {
 
     public static void main(String[] arguments) throws Exception
     {
-        jda = new JDABuilder(AccountType.BOT).setToken("NDM4Nzc0Mjc2NDYwNjQyMzA0.DcJf-Q.qVc_ND5Hbr9GIAStjF6Lsu-GBac").buildAsync();
+        jda = new JDABuilder(AccountType.BOT).setToken("-").buildAsync();
         scheduler.scheduleWithFixedDelay(() -> {
             callForUpdates();
                 }, 0L,1L, TimeUnit.MINUTES);
